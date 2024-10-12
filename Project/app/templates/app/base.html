@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <br>
+            <li><a href="{% url 'about' %}">About</a></li>
+        </ul>
+    </nav>
+
+
+    {% block content %}
+    {% endblock content %}
+
+</header>
+</body>
+</html>
